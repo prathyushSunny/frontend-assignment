@@ -1,0 +1,103 @@
+.pagination-parent {
+  display: flex;
+  justify-content: space-between;
+  max-width: var(--component-max-width);
+  width: 95%;
+}
+
+.page-control{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.pagination-parent button{
+  align-self: stretch;
+  max-height: 90%;
+}
+
+.page-message{
+  align-self: flex-end;
+  font-size: 12px;
+}
+
+.page-no {
+  min-width: 20px;
+  text-align: center;
+}
+
+.rows-per-page {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.rows-per-page .title {
+  font-size: 14px;
+}
+
+.page-sizes {
+  background: #fcfcfc;
+  width: 50px;
+  height: 35px;
+  color: #555555;
+  border-radius: 2px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 600;
+  position: relative;
+}
+
+.active-page-size {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 10px;
+  position: relative;
+  padding-left: 12px;
+}
+
+.active-page-size img {
+  width: 9px;
+  position: absolute;
+  right: 6px;
+}
+
+.page-sizes-list{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateY(-38px);
+  border-radius: 2px;
+  box-sizing: border-box;
+  background: #fcfcfc;
+}
+.page-sizes-list p{
+  padding-left: 16px;
+  margin: 0;
+  padding-block: 6px;
+  transition: 0.3s ease;
+}
+
+@media screen and (min-width: 769px){
+  .page-sizes-list p:hover{
+    background: rgb(246, 246, 246);
+  }
+}
+
+.page-sizes-list p.active{
+  background: #355279;
+  color: white;
+}
+
+@media screen and (max-width: 768px){
+  .page-control{
+    font-size: 12px;
+    gap: 4px;
+  }
+
+  .rows-per-page .title, .rows-per-page .page-sizes {
+    font-size: 12px;
+  }
+}
