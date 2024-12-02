@@ -5,11 +5,5 @@
   align-items: center;
   justify-content: space-between;
   gap: 30px;
-  height: 90vh;
-}
-
-@media screen and (max-width: 768px){
-  #root {
-    height: 95vh;
-  }
+  height: 80vh;
 }
