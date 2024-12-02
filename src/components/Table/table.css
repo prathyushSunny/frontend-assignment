@@ -1,0 +1,48 @@
+.table-parent{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: var(--component-max-width);
+  width: 95%;
+  border: 1px solid #5d5d5d;
+  overflow-y: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+table thead {
+  position: sticky;
+  top: 0;
+}
+
+table thead tr {
+  background-color: #355279;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+table tbody tr {
+  border-bottom: 1px solid #5d5d5d;
+}
+
+table tbody tr:last-child {
+  border-bottom: none;
+}
+
+table th,
+table td {
+  padding: 16px;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px){
+  table th {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+}
