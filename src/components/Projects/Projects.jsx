@@ -12,7 +12,6 @@ export default function Projects() {
     pageSize,
     setPageSize
   } = useProjects();
-  console.log(projects, "projects");
 
   const onNext = () => setPage(page => page += 1);
   const onPrevious = () => setPage(page => page -= 1);
